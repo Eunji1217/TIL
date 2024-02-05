@@ -1,12 +1,13 @@
+package Interface01;
+
 import java.math.BigDecimal;
 
-public class LargeAppliance extends Product implements DeliveryChargeCalculator{
+public class Beauty extends Product implements DeliveryChargeCalculator {
 
     private BigDecimal deliveryCharge;
-    public LargeAppliance(String name, BigDecimal price, Double weight) {
+    public Beauty(String name, BigDecimal price, Double weight) {
         super(name, price, weight);
     }
-
     @Override
     public BigDecimal getDeliveryCharge() {
         Double weight = this.getWeight();
